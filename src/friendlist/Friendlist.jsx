@@ -1,3 +1,4 @@
+import FriendListItem from "./FriendListItem";
 
 
 const FriendList = ({ friends }) => {
@@ -5,7 +6,7 @@ const FriendList = ({ friends }) => {
       <ul>
         {friends.map((friend) => (
           <li key={friend.id}>
-            <FriendList {...friend} />
+            <FriendListItem {...FriendListItem} />
           </li>
         ))}
       </ul>

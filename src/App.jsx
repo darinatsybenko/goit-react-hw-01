@@ -3,6 +3,9 @@ import Friendlist from "./friendlist/Friendlist"
 import Profile from "./profile/Profile"
 import TransactionHistory from "./transactionhistory/TransactionHistory"
 import friends from "./friendlist/friends.json"
+import FriendListItem from "./friendlist/FriendListItem"
+import transactions from "./transactionhistory/transactions.json"
+
 
 function App() {
   return (
@@ -11,11 +14,12 @@ function App() {
  name={userData.username}
  tag={userData.tag}
  location={userData.location}
- avatar={userData.avatar}
+ image={userData.avatar}
  stats={userData.stats}
  />
  <Friendlist friends={friends}/>
- <TransactionHistory/>
+ <FriendListItem/>
+ <TransactionHistory items={transactions}/>
  </>
   );
 }

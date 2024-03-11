@@ -1,7 +1,7 @@
 
 
 
-const TransactionHistory = () => {
+const TransactionHistory = ({items}) => {
   return (
    <table>
 <thead>
@@ -12,6 +12,9 @@ const TransactionHistory = () => {
     </tr>
   </thead>
   <tbody>
+    {items.map(transactiom) => (
+      
+    )
     <tr>
       <td>Invoice</td>
       <td>125</td>
